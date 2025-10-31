@@ -140,5 +140,58 @@
             gallery.appendChild(createImageCard(item));
         });
 
+        // Video Player Controls
+        
+        const video = document.getElementById('videoPlayer');
+        const btn = document.getElementById('playPauseBtn');
+        let hideTimeout;
+
+        function togglePlayPause() {
+            if (video.paused) {
+                video.play();
+                btn.classList.add('playing');
+            } else {
+                video.pause();
+                btn.classList.remove('playing');
+            }
+        }
+
+        function showButton() {
+            btn.classList.remove('hide');
+            clearTimeout(hideTimeout);
+            
+            if (!video.paused) {
+                hideTimeout = setTimeout(() => {
+                    btn.classList.add('hide');
+                }, 300);
+            }
+        }
+
+        btn.addEventListener('click', togglePlayPause);
+
+        video.addEventListener('click', () => {
+            togglePlayPause();
+            showButton();
+        });
+
+        video.addEventListener('play', () => {
+            btn.classList.add('playing');
+            hideTimeout = setTimeout(() => {
+                btn.classList.add('hide');
+            }, 2000);
+        });
+
+        video.addEventListener('pause', () => {
+            btn.classList.remove('playing');
+            showButton();
+        });
+
+        video.addEventListener('mousemove', showButton);
+        
+        video.addEventListener('ended', () => {
+            btn.classList.remove('playing');
+            showButton();
+        });
+
 
 
