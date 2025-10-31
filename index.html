@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <meta name="description" content="Landing Page">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" async status="loaded"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+     <nav class="top-menu">
+        <div class="menu-container">
+            <img class="logo" src="img/Logo.svg" alt="">
+            <div class="menu-links">
+                <a href="#tienda">Tienda</a>
+                <a href="#quienes-somos">Quiénes somos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-dots">
+        <div class="nav-dot active" data-section="0" data-label="Inicio"></div>
+        <div class="nav-dot" data-section="1" data-label="Nueva Colección"></div>
+        <div class="nav-dot" data-section="2" data-label="Explorar Colección"></div>
+        <div class="nav-dot" data-section="3" data-label="Registrate"></div>
+        <div class="nav-dot" data-section="4" data-label="Newsletter"></div>
+    </div>
+
+    <!-- video background -->
+    <!-- <video autoplay muted loop id="video-background">
+        <source src="media/video.webm" type="video/mp4">
+    </video> -->
+
+    <!-- Contenedor Scroll -->
+    <div class="scroll-container">
+        <section class="section">
+
+            <div class="row1">
+                <h1>LOREM IPSUM</h1>
+                <p>Aliquam nec orci sed nulla lacinia volutpat</p>
+            </div>
+
+        </section>
+        <section class="section">
+        
+            <div class="row2">
+               
+                <video class="promo-video" src="media/sectionvideo.webm" poster="img/placeholder.webp" controls></video>
+            </div>
+        
+        </section>
+        <section class="section">
+
+            <div class="container">
+                <h2>NUEVA COLECCIÓN</h2>
+                <div class="gallery" id="gallery"></div>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <div class="row4-container">
+                
+                <div class="form">
+                    <form class="register-form" action="/action_page.php">
+                        <h3>REGISTRATE</h3>
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Nombre">
+        
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Apellidos">
+        
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Email">
+        
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Contraseña">
+        
+                        <label for="lname"></label>
+                        <input type="text" id="lname" name="lastname" placeholder="Repite la Contraseña">
+        
+                        <label for="country"></label>
+                        <select id="country" name="country">
+                            <option value="" disabled selected>Género</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="No dice">No dice</option>
+                        </select>
+        
+                        <input type="submit" value="Registrarme">
+                        <p style="text-align: center;">o</p>
+                        <button class="signgoogle" type="submit"><img class="googleicon" src="img/google-icon.svg"> Continuar con Google</button>
+                    </form>
+                </div>
+                <div class="getapp">
+                    <h3 class="texto-getapp">DESCARGA NUESTRA APP</h3>
+                    <div class="mockup-img"><img src="img/App.webp" alt="Mockup App"></div>
+                    <div><a href="https://www.apple.com/es/app-store/" target="_blank"><img class="apple" alt="Apple Store" src="img/Apple Store.svg"></a><a href="https://play.google.com/" target="_blank"><img class="googleplay" src="img/Google Play.svg"
+                        alt="Google Play"></a></div>
+                </div>
+                
+            </div>
+        
+        </section>
+
+        <section class="section">
+            <div class="row5-container">
+                <div class="newsletter-img"><img style="width: 900px;" src="img/wow3.webp" alt="newsletter"></div>
+                <div class="newsletter">
+                    <div><h2 class="texto-newsletter">¡NO TE PIERDAS NADA Y CONSIGUE UN 10% DE DESCUENTO!</h2>
+                        <p class="p-newsletter">Únete a nuestra comunidad para estar al día, recibe en tu correo electrónico las últimas novedades, artículos y ofertas exclusivas.<br>
+                    Suscríbete a la newsletter y te enviaremos tu código de descuento personal para tu primera compra.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="text" placeholder="Email" name="mail" required>
+                        <input type="submit" value="Suscríbete">
+                        </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
