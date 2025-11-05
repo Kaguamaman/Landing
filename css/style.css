@@ -26,6 +26,16 @@ h2{
     line-height: 1.1em;
 }
 
+h4 {
+    font-family: "League Spartan", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+    padding-bottom: 10px;
+    line-height: 1.2em;
+}
+
 p{
    font-family: "League Spartan", sans-serif;
     color: rgb(42, 5, 83);
@@ -449,21 +459,11 @@ body{
 
 h3{
     font-family: "Audiowide", sans-serif;
-    color: rgb(79, 25, 167);
+    color: rgb(0, 0, 0);
     font-size: 22px;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 5px;
-}
-
-.subtext-form{
-    font-family: "League Spartan", sans-serif;
-    color: rgb(79, 25, 167);
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    padding-bottom: 0px;
-    line-height: 1.2em;
+    padding-bottom: 10px;
 }
 
 .texto-getapp{
@@ -480,7 +480,7 @@ h3{
     font-size: 16px;
     border-radius: 5px;
     background-color: #f2f2f292;
-    padding: 28px 35px 25px 35px;
+    padding: 35px;
 }
 
 label {display: block;}
@@ -624,13 +624,20 @@ option:focus {
     font-family: "League Spartan", sans-serif;
     font-size: 16px;
     border-radius: 5px;
+    margin-bottom: 20px;
     /* background-color: #f2f2f292; */
     /* padding: 50px 50px 50px 50px; */
 }
 
 .newsletter-img{
-    padding-top: 50px;
-    margin-bottom: -60px;
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+    /* padding-top: 50px; */
+    margin-bottom: -100px;
+    padding-bottom: 0;
+    bottom: 0;
+    
 }
 
 .newsletter{
@@ -646,9 +653,9 @@ option:focus {
 .texto-newsletter{
     font-family: "Audiowide", sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
     line-height: 1.1em;
 }
@@ -658,10 +665,16 @@ option:focus {
     color: rgb(255, 255, 255);
     font-size: 22px;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     padding-bottom: 10px;
     line-height: 1.2em;
 }
+
+.socials{
+    display: flex;
+    gap: 25px;
+    padding-top: 10px;
+    }
 
 /* video player */
 
