@@ -29,7 +29,7 @@ h2{
 h4 {
     font-family: "League Spartan", sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 300;
     text-align: left;
     padding-bottom: 10px;
@@ -672,9 +672,10 @@ option:focus {
 
 .socials{
     display: flex;
+    justify-content: center;
     gap: 25px;
-    padding-top: 10px;
-    }
+    padding-top: 5px;
+    } 
 
 /* video player */
 
