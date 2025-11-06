@@ -46,22 +46,22 @@ p{
     line-height: 1.2em;
 }
 
-body{
+/* body{
     width: 100%;
     background-image:url('../img/bg2.webp');
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-/* #video-background {
+#video-background {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-} */
+}
 
  .top-menu {
             position: fixed;
@@ -69,7 +69,7 @@ body{
             left: 0;
             width: 100%;
             z-index: 2000;
-            background: rgba(255, 255, 255, 0.0);
+            background: rgba(255, 255, 255, 0);
             padding: 20px 0;
         }
 
