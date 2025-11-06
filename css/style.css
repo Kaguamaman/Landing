@@ -374,11 +374,11 @@ p{
         }
 
         .gallery {
-            background-color: #f2f2f292;
+            background-color: #f2f2f24d;
             /* border-color: #293a32;
             border-style: solid;*/
             border-radius: 5px;
-            padding: 30px;
+            padding: 15px;
             display: grid;
             grid-template-columns: repeat(4, minmax(260px, 1fr));
             gap: 1.0rem;
@@ -625,8 +625,8 @@ option:focus {
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 20px;
-    /* background-color: #f2f2f292; */
-    /* padding: 50px 50px 50px 50px; */
+    background-color: #f2f2f24d;
+    padding: 20px 50px 30px 50px;
 }
 
 .newsletter-img{
@@ -673,7 +673,7 @@ option:focus {
 .socials{
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     padding-top: 5px;
     } 
 
