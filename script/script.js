@@ -1,7 +1,10 @@
- // Efecto de blur al hacer scroll
+ // Efecto de blur al hacer scroll (solo en desktop)
         const sections = document.querySelectorAll('.section');
         const navDots = document.querySelectorAll('.nav-dot');
         
+        // Comprobar si es mobile
+        const isMobile = () => window.innerWidth <= 768;
+
         const observerOptions = {
             root: null,
             threshold: 0.5,
@@ -9,6 +12,9 @@
         };
 
         const observer = new IntersectionObserver((entries) => {
+            // No aplicar efectos en mobile
+            if (isMobile()) return;
+
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.remove('blur-out');
@@ -22,8 +28,13 @@
                             dot.classList.remove('active');
                         }
                     });
-                } else {
-                    entry.target.classList.add('blur-out');
+
+                    // Remove blur from current section and add to others
+                    sections.forEach(section => {
+                        if (section !== entry.target) {
+                            section.classList.add('blur-out');
+                        }
+                    });
                 }
             });
         }, observerOptions);
