@@ -771,7 +771,7 @@ option:hover,option:focus {
 .video-container {
 	position: relative;
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1080px;
 	border-radius: 10px;
 	overflow: hidden;
 	margin-top: 50px;
