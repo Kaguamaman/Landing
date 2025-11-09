@@ -8,6 +8,16 @@
 
 @import "~fluid-player/src/css/fluidplayer.css";
 
+@font-face {
+  font-family: Audiowide;
+  src: url(../fonts/Audiowide-Regular.woff);
+}
+
+@font-face {
+  font-family: League Spartan;
+  src: url(../fonts/LeagueSpartan-Regular.woff);
+}
+
 html {
             scroll-behavior: smooth;
             width: 100%;
@@ -21,6 +31,7 @@ html {
                 overflow-y: scroll;
             }
         }
+ 
 
 h2{
     font-family: "Audiowide", sans-serif;
