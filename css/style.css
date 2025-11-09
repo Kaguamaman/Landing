@@ -659,7 +659,7 @@ p{
 
 h3{
     font-family: "Audiowide", sans-serif;
-    color: #5000b1;
+    color: #160031;
     font-size: 22px;
     font-weight: 600;
     text-align: center;
@@ -698,18 +698,15 @@ input[type=text], select {
 }
 
 input[type=text]::placeholder {
-  color: #222222;
-  opacity: 0.8;
+  color: #000000;
 }
 
 input[type=text]:-moz-placeholder {
-  color: #222222;
-  opacity: 0.8;
+  color: #000000;
 }
 
 input[type=text]::-webkit-input-placeholder {
-  color: #222222;
-  opacity: 0.8;
+  color: #000000;
 }
 
 input[type=text]:focus {
@@ -742,7 +739,7 @@ select,
   appearance: base-select;
   border: none;
   border-radius: 5px;
-  color: #363636;
+  color: #000000;
 }
 
 select {
