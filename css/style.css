@@ -10,11 +10,13 @@
 
 @font-face {
   font-family: Audiowide;
+  font-display: swap;
   src: url(../fonts/Audiowide-Regular.woff);
 }
 
 @font-face {
   font-family: League Spartan;
+  font-display: swap;
   src: url(../fonts/LeagueSpartan-Regular.woff);
 }
 
@@ -723,7 +725,7 @@ p{
 
 h3{
     font-family: "Audiowide", sans-serif;
-    color: rgb(0, 0, 0);
+    color: #5000b1;
     font-size: 22px;
     font-weight: 600;
     text-align: center;
@@ -756,10 +758,8 @@ input[type=text], select {
   padding: 16px;
   margin: 13px 0;
   display: inline-block;
-  /* border: 1px solid #ccc; */
   border-style: none;
   border-radius: 5px;
-  /* box-sizing: border-box; */
   background-color: #ffffffa9;
 }
 
@@ -795,7 +795,7 @@ select,
   appearance: base-select;
   border: none;
   border-radius: 5px;
-  color: #666;
+  color: #7a7a7a;
 }
 
 select {
