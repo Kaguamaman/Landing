@@ -1,8 +1,7 @@
- // Efecto de blur al hacer scroll (solo en desktop)
+
         const sections = document.querySelectorAll('.section');
         const navDots = document.querySelectorAll('.nav-dot');
         
-        // Comprobar si es mobile
         const isMobile = () => window.innerWidth <= 768;
 
         const observerOptions = {
@@ -12,14 +11,14 @@
         };
 
         const observer = new IntersectionObserver((entries) => {
-            // No aplicar efectos en mobile
+            
             if (isMobile()) return;
 
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.remove('blur-out');
                     
-                    // Actualizar navegación activa
+                   
                     const index = Array.from(sections).indexOf(entry.target);
                     navDots.forEach((dot, i) => {
                         if (i === index) {
@@ -29,7 +28,7 @@
                         }
                     });
 
-                    // Remove blur from current section and add to others
+                    
                     sections.forEach(section => {
                         if (section !== entry.target) {
                             section.classList.add('blur-out');
@@ -43,7 +42,7 @@
             observer.observe(section);
         });
 
-        // Navegación con clicks en los puntos
+        
         navDots.forEach(dot => {
             dot.addEventListener('click', () => {
                 const sectionIndex = parseInt(dot.getAttribute('data-section'));
@@ -52,62 +51,61 @@
         });
 
 
-        // galeria de imagenes
 
         const galleryItems = [
             {
                 id: 1,
                 staticImage: 'img/1_draw.webp',
                 animatedMedia: 'media/1.webp',
-                title: 'Paisaje Natural',
+                title: 'Skyline',
                 mediaType: 'gif'
             },
             {
                 id: 2,
                 staticImage: 'img/2_draw.webp',
                 animatedMedia: 'media/2.webp',
-                title: 'Montañas',
+                title: 'Nova',
                 mediaType: 'gif'
             },
             {
                 id: 3,
                 staticImage: 'img/3_draw.webp',
                 animatedMedia: 'media/3.webp',
-                title: 'Bosque',
+                title: 'Wave',
                 mediaType: 'gif'
             },
             {
                 id: 4,
                 staticImage: 'img/4_draw.webp',
                 animatedMedia: 'media/4.webp',
-                title: 'Lago',
+                title: 'Neon',
                 mediaType: 'gif'
             },
             {
                 id: 5,
                 staticImage: 'img/5_draw.webp',
                 animatedMedia: 'media/5.webp',
-                title: 'Aventura',
+                title: 'Riot',
                 mediaType: 'gif'
             },
             {
                 id: 6,
                 staticImage: 'img/6_draw.webp',
                 animatedMedia: 'media/6.webp',
-                title: 'Atardecer',
+                title: 'Drift',
                 mediaType: 'gif'
             },
              {
                 id: 7,
                 staticImage: 'img/7_draw.webp',
                 animatedMedia: 'media/7.webp',
-                title: 'Atardecer',
+                title: 'Echo',
                 mediaType: 'gif'
             }, {
                 id: 8,
                 staticImage: 'img/8_draw.webp',
                 animatedMedia: 'media/8.webp',
-                title: 'Atardecer',
+                title: 'Pulse',
                 mediaType: 'gif'
             }
         ];
@@ -150,8 +148,6 @@
         galleryItems.forEach(item => {
             gallery.appendChild(createImageCard(item));
         });
-
-        // Video Player Controls
         
         const video = document.getElementById('videoPlayer');
         const btn = document.getElementById('playPauseBtn');
